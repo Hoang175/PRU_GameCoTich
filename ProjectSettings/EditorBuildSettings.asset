@@ -11,6 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/System/Scenes/FullMap1.unity
     guid: bed6e90aea85f5841a25bfadab701ae6
+  - enabled: 1
+    path: Assets/System/Scenes/Map 1.2_7.unity
+    guid: 9102e5708b009864fadaa701f1e5f88b
+  - enabled: 1
+    path: Assets/System/Scenes/Map 1.2_12.unity
+    guid: 74b5d91bc156a814ab063d1e7c43c434
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

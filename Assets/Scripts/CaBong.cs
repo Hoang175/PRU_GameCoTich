@@ -32,7 +32,6 @@ public class CaBong : MonoBehaviour
 {
     void Start()
     {
-        // T? ??ng ??m b?o Collider là d?ng Trigger ?? T?m có th? ?i xuyên/??ng ?è lên
         GetComponent<Collider2D>().isTrigger = true;
     }
 }
