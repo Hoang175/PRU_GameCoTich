@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using TMPro;
-using UnityEngine.SceneManagement; 
+using UnityEngine.SceneManagement;
 
 public class FishCollector : MonoBehaviour
 {
@@ -14,19 +14,21 @@ public class FishCollector : MonoBehaviour
     public TextMeshProUGUI fishCounterText;
     public GameObject fishUIContainer;
 
+    // ==== THÊM BIẾN NÀY ĐỂ CHỨA CÁI TOOLTIP ====
+    public GameObject interactTooltipUI; 
+
     [Header("Phần thưởng (Reward)")]
-    public GameObject awardPrefab; 
+    public GameObject awardPrefab;
 
     [Header("Âm thanh (Audio)")]
-    public AudioSource sfxSource;          
-    public AudioClip pickFishSound;        
-    public AudioClip talkToCamSound;        
+    public AudioSource sfxSource;
+    public AudioClip pickFishSound;
+    public AudioClip talkToCamSound;
     public AudioClip questCompleteSound;
 
 
     [Header("Chuyển cảnh (Next Scene)")]
     public string nextSceneName = "Map 1.1_4";
-    //public string nextSceneName = "Ten_Scene_Cua_Ban";
     public float timeToWait = 5f;
 
     private GameObject currentFishNearMe;
@@ -36,47 +38,17 @@ public class FishCollector : MonoBehaviour
     {
         if (fishUIContainer != null) fishUIContainer.SetActive(false);
 
+        if (interactTooltipUI != null) interactTooltipUI.SetActive(false);
+
         if (sfxSource == null) sfxSource = GetComponent<AudioSource>();
     }
 
     public void TryInteract()
     {
-        //if (isNearCam)
-        //{
-        //    PlaySound(talkToCamSound);
-
-        //    if (!isQuestStarted)
-        //    {
-        //        isQuestStarted = true;
-        //        if (fishUIContainer != null)
-        //        {
-        //            fishUIContainer.SetActive(true);
-        //            UpdateUIText();
-        //        }
-        //        Debug.Log("Cám: Chị Tấm đi bắt 6 con cá bống đi!");
-        //    }
-        //    else if (isQuestStarted && fishCount < targetFish)
-        //    {
-        //        Debug.Log("Cám: Mới bắt được " + fishCount + " con thôi à? Nhanh lên!");
-        //    }
-        //    else if (isQuestStarted && fishCount >= targetFish && !isRewardClaimed)
-        //    {
-        //        isRewardClaimed = true;
-        //        if (fishUIContainer != null) fishUIContainer.SetActive(false);
-
-        //        PlaySound(questCompleteSound);
-        //        Debug.Log("Cám: Đưa giỏ cá đây cho em...");
-        //        GiveReward();
-        //    }
-        //    else if (isRewardClaimed)
-        //    {
-        //        Debug.Log("Cám: Yếm Đỏ sẽ là của mình hahaha!");
-        //    }
-        //    return;
-        //}
-
         if (isNearCam)
         {
+            if (interactTooltipUI != null) interactTooltipUI.SetActive(false);
+
             PlaySound(talkToCamSound);
 
             if (!isQuestStarted)
@@ -84,7 +56,6 @@ public class FishCollector : MonoBehaviour
                 isQuestStarted = true;
                 if (fishUIContainer != null) { fishUIContainer.SetActive(true); UpdateUIText(); }
 
-                // Cốt truyện 1: Nhận Quest
                 string[] lines = {
                     "Cám: Chị Tấm ơi, dì bảo hai chị em mình ra ao bắt tôm bắt tép.",
                     "Cám: Ai bắt được đầy giỏ trước sẽ được dì thưởng cho một cái yếm đỏ đấy!",
@@ -95,7 +66,6 @@ public class FishCollector : MonoBehaviour
             }
             else if (isQuestStarted && fishCount < targetFish)
             {
-                // Cốt truyện 2: Bị hối thúc
                 string[] lines = {
                     "Cám: Chị Tấm lười thế, mới bắt được " + fishCount + " con thôi à? Nhanh tay lên kẻo tối!",
                     "Tấm: Chị đang cố đây, cá bống hôm nay trốn kỹ quá."
@@ -107,7 +77,6 @@ public class FishCollector : MonoBehaviour
                 isRewardClaimed = true;
                 if (fishUIContainer != null) fishUIContainer.SetActive(false);
 
-                // Cốt truyện 3: Trả Quest & Bị lừa
                 string[] lines = {
                     "Tấm: Cám ơi, chị bắt đủ 6 con cá bống rồi này!",
                     "Cám: Chị Tấm ơi chị Tấm! Đầu chị lấm, chị hụp cho sâu kẻo về dì mắng.",
@@ -122,7 +91,6 @@ public class FishCollector : MonoBehaviour
             }
             else if (isRewardClaimed)
             {
-                // Cốt truyện 4: Nói chuyện sau khi mất cá
                 string[] lines = {
                     "Cám: Chị cứ tắm mát đi nhé, em mang cá về nhận yếm đỏ trước đây! Hahaha."
                 };
@@ -177,7 +145,6 @@ public class FishCollector : MonoBehaviour
     {
         Debug.Log(">>> [Hệ thống]: Đang chuyển sang màn " + nextSceneName);
 
-        // Kích hoạt chuyển scene
         if (!string.IsNullOrEmpty(nextSceneName))
         {
             SceneManager.LoadScene(nextSceneName);
@@ -193,7 +160,6 @@ public class FishCollector : MonoBehaviour
     {
         if (sfxSource != null && clip != null)
         {
-       
             sfxSource.PlayOneShot(clip);
         }
     }
@@ -201,13 +167,28 @@ public class FishCollector : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Fish")) currentFishNearMe = collision.gameObject;
-        else if (collision.CompareTag("NPC")) isNearCam = true;
+        else if (collision.CompareTag("NPC"))
+        {
+            isNearCam = true;
+
+            if (interactTooltipUI != null && DialogueManager.instance != null && !DialogueManager.instance.isTalking)
+            {
+                interactTooltipUI.SetActive(true);
+            }
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.CompareTag("Fish")) currentFishNearMe = null;
-        else if (collision.CompareTag("NPC")) isNearCam = false;
+        else if (collision.CompareTag("NPC"))
+        {
+            isNearCam = false;
+
+            if (interactTooltipUI != null)
+            {
+                interactTooltipUI.SetActive(false);
+            }
+        }
     }
 }
-
