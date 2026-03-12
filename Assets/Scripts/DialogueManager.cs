@@ -4,7 +4,7 @@ using TMPro;
 
 public class DialogueManager : MonoBehaviour
 {
-    public static DialogueManager instance; // Bi?n toàn c?c ?? các script khác g?i ??n
+    public static DialogueManager instance; 
 
     public GameObject dialoguePanel;
     public TextMeshProUGUI nameText;
@@ -25,7 +25,6 @@ public class DialogueManager : MonoBehaviour
         dialoguePanel.SetActive(false);
     }
 
-    // Các script khác (nh? FishCollector) s? g?i hàm này và ném câu chuy?n vào
     public void StartDialogue(string[] lines)
     {
         isTalking = true;

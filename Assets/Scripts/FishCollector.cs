@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿
+using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 
@@ -13,9 +14,7 @@ public class FishCollector : MonoBehaviour
     [Header("UI Giao diện")]
     public TextMeshProUGUI fishCounterText;
     public GameObject fishUIContainer;
-
-    // ==== THÊM BIẾN NÀY ĐỂ CHỨA CÁI TOOLTIP ====
-    public GameObject interactTooltipUI; 
+    public GameObject interactTooltipUI;
 
     [Header("Phần thưởng (Reward)")]
     public GameObject awardPrefab;
@@ -26,9 +25,8 @@ public class FishCollector : MonoBehaviour
     public AudioClip talkToCamSound;
     public AudioClip questCompleteSound;
 
-
     [Header("Chuyển cảnh (Next Scene)")]
-    public string nextSceneName = "Map 1.1_4";
+    public string nextSceneName = "Lv2_1_DuongVao";
     public float timeToWait = 5f;
 
     private GameObject currentFishNearMe;
@@ -37,9 +35,7 @@ public class FishCollector : MonoBehaviour
     void Start()
     {
         if (fishUIContainer != null) fishUIContainer.SetActive(false);
-
         if (interactTooltipUI != null) interactTooltipUI.SetActive(false);
-
         if (sfxSource == null) sfxSource = GetComponent<AudioSource>();
     }
 
@@ -48,7 +44,6 @@ public class FishCollector : MonoBehaviour
         if (isNearCam)
         {
             if (interactTooltipUI != null) interactTooltipUI.SetActive(false);
-
             PlaySound(talkToCamSound);
 
             if (!isQuestStarted)
@@ -99,7 +94,6 @@ public class FishCollector : MonoBehaviour
             return;
         }
 
-
         if (currentFishNearMe != null)
         {
             if (isQuestStarted && !isRewardClaimed && fishCount < targetFish)
@@ -115,7 +109,6 @@ public class FishCollector : MonoBehaviour
     {
         fishCount++;
         UpdateUIText();
-
         PlaySound(pickFishSound);
         Debug.Log("Tấm: Bắt được con thứ " + fishCount + " rồi!");
     }
@@ -125,26 +118,21 @@ public class FishCollector : MonoBehaviour
         if (fishCounterText != null) fishCounterText.text = fishCount + " / " + targetFish;
     }
 
-
     void GiveReward()
     {
         Debug.Log(">>> [Hệ thống]: Bạn đã bị Cám trút sạch giỏ cá!");
-
         if (awardPrefab != null)
         {
             GameObject reward = Instantiate(awardPrefab, transform.position + new Vector3(1, 0, 0), Quaternion.identity);
-
             Destroy(reward, timeToWait);
             Debug.Log(">>> [Hệ thống]: Phần thưởng rớt ra và sẽ biến mất sau 5 giây!");
         }
-
         Invoke("LoadNextScene", timeToWait);
     }
 
     void LoadNextScene()
     {
         Debug.Log(">>> [Hệ thống]: Đang chuyển sang màn " + nextSceneName);
-
         if (!string.IsNullOrEmpty(nextSceneName))
         {
             SceneManager.LoadScene(nextSceneName);
@@ -154,7 +142,6 @@ public class FishCollector : MonoBehaviour
             Debug.LogWarning("Chưa nhập tên Scene tiếp theo trong Inspector!");
         }
     }
-
 
     private void PlaySound(AudioClip clip)
     {
@@ -170,7 +157,6 @@ public class FishCollector : MonoBehaviour
         else if (collision.CompareTag("NPC"))
         {
             isNearCam = true;
-
             if (interactTooltipUI != null && DialogueManager.instance != null && !DialogueManager.instance.isTalking)
             {
                 interactTooltipUI.SetActive(true);
@@ -184,7 +170,6 @@ public class FishCollector : MonoBehaviour
         else if (collision.CompareTag("NPC"))
         {
             isNearCam = false;
-
             if (interactTooltipUI != null)
             {
                 interactTooltipUI.SetActive(false);

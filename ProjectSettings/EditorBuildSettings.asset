@@ -9,17 +9,17 @@ EditorBuildSettings:
     path: Assets/System/Scenes/MainMenu.unity
     guid: 05fdce7d0441f0948a90d45952e039b4
   - enabled: 1
-    path: Assets/System/Scenes/Map 1.1_4.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 1
     path: Assets/System/Scenes/FullMap1.unity
     guid: bed6e90aea85f5841a25bfadab701ae6
   - enabled: 1
-    path: Assets/System/Scenes/Map 1.2_7.unity
-    guid: 9102e5708b009864fadaa701f1e5f88b
+    path: Assets/System/Scenes/Lv2/Lv2_1_DuongVao.unity
+    guid: b11c7e7874ef2294eab2cdd24ba5a584
   - enabled: 1
-    path: Assets/System/Scenes/Map 1.2_12.unity
-    guid: 74b5d91bc156a814ab063d1e7c43c434
+    path: Assets/System/Scenes/Lv2/Lv2_2_SanTruoc.unity
+    guid: 732a015373325794a84047c5e52ec348
+  - enabled: 1
+    path: Assets/System/Scenes/Lv2/Lv2_3_SanSau.unity
+    guid: c548c78d50cc1c0499d7a73008844bf3
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

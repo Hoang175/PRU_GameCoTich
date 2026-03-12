@@ -14,9 +14,11 @@ GameObject:
   - component: {fileID: 1424481990377086692}
   - component: {fileID: 1068154769545188608}
   - component: {fileID: 3938083381451845878}
+  - component: {fileID: 958351696638733094}
+  - component: {fileID: 6364849928657025021}
   m_Layer: 0
   m_Name: TamPlayer
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,8 +32,8 @@ Transform:
   m_GameObject: {fileID: 7263719170311030887}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.09, y: 3.16, z: 0}
-  m_LocalScale: {x: 0.6397373, y: 0.6397373, z: 0.6397373}
+  m_LocalPosition: {x: -11.41, y: -3.38, z: 0}
+  m_LocalScale: {x: 0.6733875, y: 0.41774845, z: 0.6397373}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -81,9 +83,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: -108138351
-  m_SortingLayer: 4
-  m_SortingOrder: 1
+  m_SortingLayerID: 1453526697
+  m_SortingLayer: 2
+  m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -5128319676860358116, guid: 974ad6820334f254c8c4e84183ad2309, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -180,7 +182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae87e5925b39ada4685c9ce058482f67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tam
-  moveSpeed: 4
+  moveSpeed: 6
 --- !u!95 &3938083381451845878
 Animator:
   serializedVersion: 7
@@ -203,3 +205,44 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &958351696638733094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7263719170311030887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69a6243c2f5788f49993b5bd8d2565da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FishCollector
+  fishCount: 0
+  targetFish: 6
+  isQuestStarted: 0
+  isRewardClaimed: 0
+  fishCounterText: {fileID: 0}
+  fishUIContainer: {fileID: 0}
+  interactTooltipUI: {fileID: 0}
+  awardPrefab: {fileID: 1306813253103376549, guid: 54084d2d1bd0b794fb840efa02cb2cf8, type: 3}
+  sfxSource: {fileID: 0}
+  pickFishSound: {fileID: 8300000, guid: 17eec380f33c58a44924baecab597c4d, type: 3}
+  talkToCamSound: {fileID: 0}
+  questCompleteSound: {fileID: 0}
+  nextSceneName: Map 1.2_12
+  timeToWait: 5
+--- !u!114 &6364849928657025021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7263719170311030887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a1d360b45c945d459c54c08707bc577, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostSpawner
+  ghostDelay: 0.05
+  ghostFadeSpeed: 4
+  ghostColor: {r: 1, g: 0, b: 1, a: 0.6431373}

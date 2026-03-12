@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Fish
   - NPC
+  - Water
+  - CuaNha
   layers:
   - Default
   - TransparentFX
@@ -48,6 +50,9 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 1453526697
+    locked: 0
+  - name: Obstacle
+    uniqueID: 609607557
     locked: 0
   - name: NPC
     uniqueID: 1382679409
