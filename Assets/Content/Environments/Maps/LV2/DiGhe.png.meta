@@ -1,0 +1,977 @@
+fileFormatVersion: 2
+guid: bc0ea897f4212d946b6130cb22802b0b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8111402702346962506
+    second: DiGhe_0
+  - first:
+      213: 4001424875670147652
+    second: DiGhe_1
+  - first:
+      213: -1996223747094715184
+    second: DiGhe_2
+  - first:
+      213: -1195142827218883524
+    second: DiGhe_3
+  - first:
+      213: 4607926283955462532
+    second: DiGhe_4
+  - first:
+      213: 6218314369297952165
+    second: DiGhe_5
+  - first:
+      213: -4463689516219183679
+    second: DiGhe_6
+  - first:
+      213: 8323718352246429789
+    second: DiGhe_7
+  - first:
+      213: 1182038517743280116
+    second: DiGhe_8
+  - first:
+      213: -4974139939633160089
+    second: DiGhe_9
+  - first:
+      213: -3864848175697279668
+    second: DiGhe_10
+  - first:
+      213: -4643064425895275261
+    second: DiGhe_11
+  - first:
+      213: 1196345102981707225
+    second: DiGhe_12
+  - first:
+      213: -5163053390052651334
+    second: DiGhe_13
+  - first:
+      213: -928862850673613029
+    second: DiGhe_14
+  - first:
+      213: -6164146311788989083
+    second: DiGhe_15
+  - first:
+      213: -8395919742343603271
+    second: DiGhe_16
+  - first:
+      213: -4085883652153787028
+    second: DiGhe_17
+  - first:
+      213: 6853287085750237004
+    second: DiGhe_18
+  - first:
+      213: -4596301926725080310
+    second: DiGhe_19
+  - first:
+      213: -1929260617474971117
+    second: DiGhe_20
+  - first:
+      213: -2797847713121418990
+    second: DiGhe_21
+  - first:
+      213: 2593294278039198973
+    second: DiGhe_22
+  - first:
+      213: -1393248492491165849
+    second: DiGhe_23
+  - first:
+      213: -3455795059394801265
+    second: DiGhe_24
+  - first:
+      213: 8374117322357494381
+    second: DiGhe_25
+  - first:
+      213: 3228016025677972855
+    second: DiGhe_26
+  - first:
+      213: -5803648026444207044
+    second: DiGhe_27
+  - first:
+      213: 7145617376119735455
+    second: DiGhe_28
+  - first:
+      213: 3596762891115478008
+    second: DiGhe_29
+  - first:
+      213: 899477754171551304
+    second: DiGhe_30
+  - first:
+      213: -4637853504828808000
+    second: DiGhe_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DiGhe_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 278
+        width: 36
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a46c88f18cd719070800000000000000
+      internalID: 8111402702346962506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiGhe_1
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 278
+        width: 35
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4421bb559bae78730800000000000000
+      internalID: 4001424875670147652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiGhe_2
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 278
+        width: 37
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d46836141dfb44e0800000000000000
+      internalID: -1996223747094715184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiGhe_3
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 278
+        width: 35
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3c23c74eeff96fe0800000000000000
+      internalID: -1195142827218883524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiGhe_4
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 278
+        width: 35
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 481e95a9a84a2ff30800000000000000
+      internalID: 4607926283955462532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiGhe_5
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 278
+        width: 36
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ad26bb09f3eb4650800000000000000
+      internalID: 6218314369297952165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiGhe_6
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 278
+        width: 35
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cdce1ed80acd02c0800000000000000
+      internalID: -4463689516219183679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiGhe_7
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 279
+        width: 35
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d585c0c8db9c38370800000000000000
+      internalID: 8323718352246429789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiGhe_8
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 186
+        width: 49
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ffdae8e4c1776010800000000000000
+      internalID: 1182038517743280116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiGhe_9
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 187
+        width: 55
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 760251b341e48fab0800000000000000
+      internalID: -4974139939633160089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiGhe_10
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 187
+        width: 53
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c454fb0af0d4d5ac0800000000000000
+      internalID: -3864848175697279668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiGhe_11
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 185
+        width: 52
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30552413185809fb0800000000000000
+      internalID: -4643064425895275261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiGhe_12
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 186
+        width: 49
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d5b00c58854a9010800000000000000
+      internalID: 1196345102981707225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiGhe_13
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 187
+        width: 53
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abe0989fb462958b0800000000000000
+      internalID: -5163053390052651334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiGhe_14
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 187
+        width: 52
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b17ea8c98240c13f0800000000000000
+      internalID: -928862850673613029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiGhe_15
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 188
+        width: 51
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5657846a69d847aa0800000000000000
+      internalID: -6164146311788989083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiGhe_16
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 94
+        width: 37
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bb9be25a73bb7b80800000000000000
+      internalID: -8395919742343603271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiGhe_17
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 94
+        width: 36
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6d3ccf57760c47c0800000000000000
+      internalID: -4085883652153787028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiGhe_18
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 94
+        width: 39
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c473ae15b44cb1f50800000000000000
+      internalID: 6853287085750237004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiGhe_19
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 94
+        width: 37
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0bab19ffb7a630c0800000000000000
+      internalID: -4596301926725080310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiGhe_20
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 94
+        width: 38
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31ae048a0b3e935e0800000000000000
+      internalID: -1929260617474971117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiGhe_21
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 94
+        width: 39
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21142cb145c0c29d0800000000000000
+      internalID: -2797847713121418990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiGhe_22
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 94
+        width: 38
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfc5490f76b3df320800000000000000
+      internalID: 2593294278039198973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiGhe_23
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 94
+        width: 38
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76f2739b0ef2aace0800000000000000
+      internalID: -1393248492491165849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiGhe_24
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 0
+        width: 52
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f81193cf3bc8a00d0800000000000000
+      internalID: -3455795059394801265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiGhe_25
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 0
+        width: 50
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6250923657d63470800000000000000
+      internalID: 8374117322357494381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiGhe_26
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 1
+        width: 46
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 775cdcbf8773ccc20800000000000000
+      internalID: 3228016025677972855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiGhe_27
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 0
+        width: 49
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3c65667edc457fa0800000000000000
+      internalID: -5803648026444207044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiGhe_28
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 1
+        width: 45
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f94c97cf4255a2360800000000000000
+      internalID: 7145617376119735455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiGhe_29
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 1
+        width: 45
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fbbe320bc44ae130800000000000000
+      internalID: 3596762891115478008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiGhe_30
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 1
+        width: 45
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84ee2c470469b7c00800000000000000
+      internalID: 899477754171551304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiGhe_31
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 1
+        width: 45
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c4e06c4fc803afb0800000000000000
+      internalID: -4637853504828808000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 088c7a4b89784734db500a18f7e2919d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      DiGhe_0: 8111402702346962506
+      DiGhe_1: 4001424875670147652
+      DiGhe_10: -3864848175697279668
+      DiGhe_11: -4643064425895275261
+      DiGhe_12: 1196345102981707225
+      DiGhe_13: -5163053390052651334
+      DiGhe_14: -928862850673613029
+      DiGhe_15: -6164146311788989083
+      DiGhe_16: -8395919742343603271
+      DiGhe_17: -4085883652153787028
+      DiGhe_18: 6853287085750237004
+      DiGhe_19: -4596301926725080310
+      DiGhe_2: -1996223747094715184
+      DiGhe_20: -1929260617474971117
+      DiGhe_21: -2797847713121418990
+      DiGhe_22: 2593294278039198973
+      DiGhe_23: -1393248492491165849
+      DiGhe_24: -3455795059394801265
+      DiGhe_25: 8374117322357494381
+      DiGhe_26: 3228016025677972855
+      DiGhe_27: -5803648026444207044
+      DiGhe_28: 7145617376119735455
+      DiGhe_29: 3596762891115478008
+      DiGhe_3: -1195142827218883524
+      DiGhe_30: 899477754171551304
+      DiGhe_31: -4637853504828808000
+      DiGhe_4: 4607926283955462532
+      DiGhe_5: 6218314369297952165
+      DiGhe_6: -4463689516219183679
+      DiGhe_7: 8323718352246429789
+      DiGhe_8: 1182038517743280116
+      DiGhe_9: -4974139939633160089
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

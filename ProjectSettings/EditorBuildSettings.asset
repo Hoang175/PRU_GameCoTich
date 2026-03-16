@@ -20,6 +20,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/System/Scenes/Lv2/Lv2_3_SanSau.unity
     guid: c548c78d50cc1c0499d7a73008844bf3
+  - enabled: 1
+    path: Assets/System/Scenes/Lv3/Lv3_1_PhepMau.unity
+    guid: 8a3b082bb580474499d0c919b4e194a9
+  - enabled: 1
+    path: Assets/System/Scenes/Lv4/Lv4_1_TrayHoi.unity
+    guid: 8469c36822fcf9142be37861e7361ed1
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
