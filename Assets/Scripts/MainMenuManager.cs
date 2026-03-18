@@ -88,6 +88,12 @@ public class MainMenuManager : MonoBehaviour
         if (levelSelectPanel != null) levelSelectPanel.SetActive(true);
     }
 
+    public void PlayGame()
+    {
+        Debug.Log("Đang tải màn chơi chính...");
+        SceneManager.LoadScene("fullMap1");
+    }
+
     public void CloseLevelSelect()
     {
         if (levelSelectPanel != null) levelSelectPanel.SetActive(false);
