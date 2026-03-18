@@ -25,40 +25,11 @@ public class Level4Director : MonoBehaviour
         StartCoroutine(IntroRoutine());
     }
 
-    //IEnumerator IntroRoutine()
-    //{
-    //    // 1. Thoại mở đầu (Tiếng Anh)
-    //    string[] lines = {
-    //        "Tam: Oh no, I'm late for the King's festival!",
-    //        "System: Xich Tho has joined your party!",
-    //        "Tam: Let's go, my trusty steed!"
-    //    };
-    //    if (DialogueManager.instance != null) DialogueManager.instance.StartDialogue(lines);
-    //    yield return new WaitUntil(() => DialogueManager.instance.isTalking == false);
-
-    //    // 2. Tấm đi bộ lại gần Xích Thố
-    //    Vector3 targetPos = xichTho.transform.position;
-    //    while (Vector3.Distance(tamAoMoi.transform.position, targetPos) > 0.1f)
-    //    {
-    //        tamAoMoi.transform.position = Vector3.MoveTowards(tamAoMoi.transform.position, targetPos, tocDoDiBo * Time.deltaTime);
-    //        yield return null;
-    //    }
-
-    //    // 3. Ma thuật Lên Ngựa!
-    //    tamAoMoi.SetActive(false);
-    //    xichTho.SetActive(false);
-
-    //    tamCuoiNgua.transform.position = xichTho.transform.position; // Đặt Tấm cưỡi ngựa đúng chỗ con Xích Thố
-    //    tamCuoiNgua.SetActive(true);
-
-    //    // Hiệu ứng hạt lấp lánh hoặc âm thanh ngựa hí ở đây (nếu có)
-    //    yield return new WaitForSeconds(1f);
-
-    //    // 4. BẮT ĐẦU GAME! BẢO MAP TRÔI ĐI!
-    //    isPlaying = true;
-    //}
     IEnumerator IntroRoutine()
     {
+        // THÊM DÒNG NÀY ĐỂ ĐỢI GAMEHUD KHỞI TẠO XONG RỒI MỚI NÓI
+        yield return new WaitForSeconds(0.5f);
+
         // 1. Thoại mở đầu
         string[] lines = {
             "Tam: Oh no, I'm late for the King's festival!",

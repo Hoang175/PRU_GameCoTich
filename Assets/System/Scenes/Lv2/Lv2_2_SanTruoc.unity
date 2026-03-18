@@ -269,6 +269,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4725513884166736943, guid: 24eba6d7c914a7644b46e41e6c9de446, type: 3}
   m_PrefabInstance: {fileID: 2085193767}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &765664712 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5035482370641041745, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+  m_PrefabInstance: {fileID: 1603077500}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45977bbae16431c46a013576a1aea384, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &773440008
 GameObject:
   m_ObjectHideFlags: 0
@@ -321,6 +332,10 @@ MonoBehaviour:
   gameOverScene: Lv2_1_DuongVao
   alertSound: {fileID: 8300000, guid: 0d3480e28b46e7b48a4f91cc4d170169, type: 3}
   alertIconObject: {fileID: 1126717042}
+  caughtLines:
+  - 'Stepmother: Aha! You little brat! How dare you sneak back here?'
+  - 'Tam: Oh no... she caught me...'
+  - 'System: You have been caught! Press [Space] to retry.'
 --- !u!60 &773440012
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -718,6 +733,78 @@ MonoBehaviour:
   keyObject: {fileID: 1445650349}
   interactTooltipUI: {fileID: 2940635703396954559}
   tooltipText: "Nh\u1EA5n [Space] \u0111\u1EC3 b\u1EDBi r\u01A1m"
+--- !u!1 &1336347797 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7987910448099497596, guid: 196484aea5c202a479541a71c0c80898, type: 3}
+  m_PrefabInstance: {fileID: 3133467378314157066}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1336347799 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2880953438597719679, guid: 196484aea5c202a479541a71c0c80898, type: 3}
+  m_PrefabInstance: {fileID: 3133467378314157066}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336347797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+--- !u!114 &1336347801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336347797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1336347799}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5017244196057602215}
+        m_TargetAssemblyTypeName: Tam, Assembly-CSharp
+        m_MethodName: OnInteractButton_Pressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1445650349
 GameObject:
   m_ObjectHideFlags: 0
@@ -1001,6 +1088,115 @@ CapsuleCollider2D:
   m_Offset: {x: -0.00000021530487, y: -0.41266558}
   m_Size: {x: 0.22935887, y: 1.1436938}
   m_Direction: 0
+--- !u!1001 &1603077500
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8174419980255346249, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5017244196057602215}
+    - target: {fileID: 8174419980255346249, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnInteractButton_Pressed
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264230188160813368, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264230188160813368, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264230188160813368, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264230188160813368, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264230188160813368, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264230188160813368, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264230188160813368, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264230188160813368, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264230188160813368, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264230188160813368, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264230188160813368, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264230188160813368, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264230188160813368, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264230188160813368, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264230188160813368, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264230188160813368, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264230188160813368, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264230188160813368, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264230188160813368, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264230188160813368, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8394751893858029876, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_Name
+      value: CanvasMobile
+      objectReference: {fileID: 0}
+    - target: {fileID: 8513472202514643357, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 2102732292}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
 --- !u!1 &1642618205
 GameObject:
   m_ObjectHideFlags: 0
@@ -1769,6 +1965,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3319895484508020407, guid: 28746acd1d8df114cb959ed429003125, type: 3}
+      propertyPath: joystick
+      value: 
+      objectReference: {fileID: 765664712}
+    - target: {fileID: 3319895484508020407, guid: 28746acd1d8df114cb959ed429003125, type: 3}
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 3734571579967831170}
@@ -1815,6 +2015,17 @@ PrefabInstance:
     - target: {fileID: 6382698365871059935, guid: 28746acd1d8df114cb959ed429003125, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7593536866318822303, guid: 28746acd1d8df114cb959ed429003125, type: 3}
+      propertyPath: 'lines.Array.data[0]'
+      value: 'Tam: (Thinking to herself) Cam is lurking around the yard. I must not
+        let her see me!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7593536866318822303, guid: 28746acd1d8df114cb959ed429003125, type: 3}
+      propertyPath: 'lines.Array.data[1]'
+      value: 'Tam: (Thinking to herself) I have to slip past her and search that
+        straw pile for the key to unlock the Bamboo Gate to get to the back of the
+        house.'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1919,6 +2130,14 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 2102732292}
+    - target: {fileID: 5111270877169799019, guid: 196484aea5c202a479541a71c0c80898, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6383643644867778642, guid: 196484aea5c202a479541a71c0c80898, type: 3}
+      propertyPath: m_text
+      value: Press [Space] to talk.
+      objectReference: {fileID: 0}
     - target: {fileID: 7503391709837588163, guid: 196484aea5c202a479541a71c0c80898, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1999,10 +2218,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7987910448099497596, guid: 196484aea5c202a479541a71c0c80898, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7987910448099497596, guid: 196484aea5c202a479541a71c0c80898, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1336347801}
   m_SourcePrefab: {fileID: 100100000, guid: 196484aea5c202a479541a71c0c80898, type: 3}
 --- !u!82 &3734571579967831170 stripped
 AudioSource:
@@ -2014,6 +2240,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6382698365871059935, guid: 28746acd1d8df114cb959ed429003125, type: 3}
   m_PrefabInstance: {fileID: 382980184880299699}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5017244196057602215 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3319895484508020407, guid: 28746acd1d8df114cb959ed429003125, type: 3}
+  m_PrefabInstance: {fileID: 382980184880299699}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae87e5925b39ada4685c9ce058482f67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Tam
 --- !u!1001 &7026862812241340675
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2088,3 +2325,4 @@ SceneRoots:
   - {fileID: 1875006462}
   - {fileID: 7026862812241340675}
   - {fileID: 3133467378314157066}
+  - {fileID: 1603077500}

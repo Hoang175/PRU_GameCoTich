@@ -51,20 +51,30 @@ public class FishCollector : MonoBehaviour
                 isQuestStarted = true;
                 if (fishUIContainer != null) { fishUIContainer.SetActive(true); UpdateUIText(); }
 
+                //string[] lines = {
+                //    "Cám: Chị Tấm ơi, dì bảo hai chị em mình ra ao bắt tôm bắt tép.",
+                //    "Cám: Ai bắt được đầy giỏ trước sẽ được dì thưởng cho một cái yếm đỏ đấy!",
+                //    "Tấm: Thật thế hả Cám? Vậy chị em mình cùng thi nhé!",
+                //    "Cám: Chị mau lội xuống ao bắt đủ 6 con cá bống đi, em chờ trên bờ cho."
+                //};
                 string[] lines = {
-                    "Cám: Chị Tấm ơi, dì bảo hai chị em mình ra ao bắt tôm bắt tép.",
-                    "Cám: Ai bắt được đầy giỏ trước sẽ được dì thưởng cho một cái yếm đỏ đấy!",
-                    "Tấm: Thật thế hả Cám? Vậy chị em mình cùng thi nhé!",
-                    "Cám: Chị mau lội xuống ao bắt đủ 6 con cá bống đi, em chờ trên bờ cho."
-                };
+    "Cam: Sister Tam, our stepmother told us to go to the pond to catch shrimp and fish.",
+    "Cam: Whoever fills their basket first will be rewarded with a red yem by our stepmother!",
+    "Tam: Is that true, Cam? Then let's have a competition, sister!",
+    "Cam: You quickly wade into the pond and catch 6 bong fish. I'll wait here on the shore."
+};
                 DialogueManager.instance.StartDialogue(lines);
             }
             else if (isQuestStarted && fishCount < targetFish)
             {
+                //string[] lines = {
+                //    "Cám: Chị Tấm lười thế, mới bắt được " + fishCount + " con thôi à? Nhanh tay lên kẻo tối!",
+                //    "Tấm: Chị đang cố đây, cá bống hôm nay trốn kỹ quá."
+                //};
                 string[] lines = {
-                    "Cám: Chị Tấm lười thế, mới bắt được " + fishCount + " con thôi à? Nhanh tay lên kẻo tối!",
-                    "Tấm: Chị đang cố đây, cá bống hôm nay trốn kỹ quá."
-                };
+    "Cam: Sister Tam is so lazy, you've only caught " + fishCount + " fish? Hurry up or it'll get dark!",
+    "Tam: I'm trying my best, but the bong fish are hiding well today."
+};
                 DialogueManager.instance.StartDialogue(lines);
             }
             else if (isQuestStarted && fishCount >= targetFish && !isRewardClaimed)
@@ -72,13 +82,20 @@ public class FishCollector : MonoBehaviour
                 isRewardClaimed = true;
                 if (fishUIContainer != null) fishUIContainer.SetActive(false);
 
+                //string[] lines = {
+                //    "Tấm: Cám ơi, chị bắt đủ 6 con cá bống rồi này!",
+                //    "Cám: Chị Tấm ơi chị Tấm! Đầu chị lấm, chị hụp cho sâu kẻo về dì mắng.",
+                //    "Tấm: Ủa vậy à, để chị xuống ao gội đầu chút đã nhé.",
+                //    "Cám: Đưa giỏ cá đây em giữ hộ cho...",
+                //    "Hệ thống: (Cám nhanh tay trút sạch giỏ cá bống của Tấm sang giỏ mình!)"
+                //};
                 string[] lines = {
-                    "Tấm: Cám ơi, chị bắt đủ 6 con cá bống rồi này!",
-                    "Cám: Chị Tấm ơi chị Tấm! Đầu chị lấm, chị hụp cho sâu kẻo về dì mắng.",
-                    "Tấm: Ủa vậy à, để chị xuống ao gội đầu chút đã nhé.",
-                    "Cám: Đưa giỏ cá đây em giữ hộ cho...",
-                    "Hệ thống: (Cám nhanh tay trút sạch giỏ cá bống của Tấm sang giỏ mình!)"
-                };
+    "Tam: Cam! I've caught all 6 bong fish!",
+    "Cam: Oh Sister Tam! Your hair is dirty. You should dip deeper to rinse it off, or our stepmother will scold you when we get home.",
+    "Tam: Really? Let me go into the pond to wash my hair for a bit then.",
+    "Cam: Give me your fish basket, I'll hold it for you...",
+    "System: (Cam quickly empties Tam's fish basket into her own!)"
+};
                 DialogueManager.instance.StartDialogue(lines);
 
                 PlaySound(questCompleteSound);
@@ -86,9 +103,12 @@ public class FishCollector : MonoBehaviour
             }
             else if (isRewardClaimed)
             {
+                //string[] lines = {
+                //    "Cám: Chị cứ tắm mát đi nhé, em mang cá về nhận yếm đỏ trước đây! Hahaha."
+                //};
                 string[] lines = {
-                    "Cám: Chị cứ tắm mát đi nhé, em mang cá về nhận yếm đỏ trước đây! Hahaha."
-                };
+    "Cam: You just keep bathing, sister. I'll take the fish home to get the red yem first! Hahaha."
+};
                 DialogueManager.instance.StartDialogue(lines);
             }
             return;

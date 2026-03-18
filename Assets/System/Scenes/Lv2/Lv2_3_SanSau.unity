@@ -128,6 +128,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3319895484508020407, guid: 28746acd1d8df114cb959ed429003125, type: 3}
+      propertyPath: joystick
+      value: 
+      objectReference: {fileID: 1569487035}
+    - target: {fileID: 3319895484508020407, guid: 28746acd1d8df114cb959ed429003125, type: 3}
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 224327543}
@@ -269,8 +273,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd1bfe0f934c19643a0db4702d08bb81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DistractTarget
-  clangSound: {fileID: 0}
-  interactTooltipUI: {fileID: 0}
+  clangSound: {fileID: 8300000, guid: 6135c21c6698cbd4b9efeba76c54a38a, type: 3}
+  interactTooltipUI: {fileID: 1253320311}
   tooltipText: Press [Space] to throw pebbles
 --- !u!212 &142486751
 SpriteRenderer:
@@ -408,6 +412,63 @@ AudioSource:
   m_CorrespondingSourceObject: {fileID: 2320945314219962331, guid: 2c69979625b03a640bb7b51c74f7334c, type: 3}
   m_PrefabInstance: {fileID: 224327542}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &300368566
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 641992696440489035, guid: 867330edb5fcf1c43815cc5c58d7ef71, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.76972
+      objectReference: {fileID: 0}
+    - target: {fileID: 641992696440489035, guid: 867330edb5fcf1c43815cc5c58d7ef71, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.81436
+      objectReference: {fileID: 0}
+    - target: {fileID: 641992696440489035, guid: 867330edb5fcf1c43815cc5c58d7ef71, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 641992696440489035, guid: 867330edb5fcf1c43815cc5c58d7ef71, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 641992696440489035, guid: 867330edb5fcf1c43815cc5c58d7ef71, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 641992696440489035, guid: 867330edb5fcf1c43815cc5c58d7ef71, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 641992696440489035, guid: 867330edb5fcf1c43815cc5c58d7ef71, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 641992696440489035, guid: 867330edb5fcf1c43815cc5c58d7ef71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 641992696440489035, guid: 867330edb5fcf1c43815cc5c58d7ef71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 641992696440489035, guid: 867330edb5fcf1c43815cc5c58d7ef71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2673924072639499922, guid: 867330edb5fcf1c43815cc5c58d7ef71, type: 3}
+      propertyPath: m_Name
+      value: EventSystem
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 867330edb5fcf1c43815cc5c58d7ef71, type: 3}
 --- !u!1 &312829628
 GameObject:
   m_ObjectHideFlags: 0
@@ -500,8 +561,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd1bfe0f934c19643a0db4702d08bb81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DistractTarget
-  clangSound: {fileID: 0}
-  interactTooltipUI: {fileID: 0}
+  clangSound: {fileID: 8300000, guid: 6135c21c6698cbd4b9efeba76c54a38a, type: 3}
+  interactTooltipUI: {fileID: 1253320311}
   tooltipText: Press [Space] to throw pebbles
 --- !u!212 &312829632
 SpriteRenderer:
@@ -685,8 +746,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd1bfe0f934c19643a0db4702d08bb81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DistractTarget
-  clangSound: {fileID: 0}
-  interactTooltipUI: {fileID: 0}
+  clangSound: {fileID: 8300000, guid: 6135c21c6698cbd4b9efeba76c54a38a, type: 3}
+  interactTooltipUI: {fileID: 1253320311}
   tooltipText: Press [Space] to throw pebbles
 --- !u!212 &438839194
 SpriteRenderer:
@@ -901,6 +962,79 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1372894071}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &588806041 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7987910448099497596, guid: 196484aea5c202a479541a71c0c80898, type: 3}
+  m_PrefabInstance: {fileID: 870525993}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &588806043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588806041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 588806044}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1500585063}
+        m_TargetAssemblyTypeName: HE181245_DaoHuyHoang_UntoldTalesFairyTales.Tam,
+          Assembly-CSharp
+        m_MethodName: OnInteractButton_Pressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &588806044 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2880953438597719679, guid: 196484aea5c202a479541a71c0c80898, type: 3}
+  m_PrefabInstance: {fileID: 870525993}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588806041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
 --- !u!1 &596491611
 GameObject:
   m_ObjectHideFlags: 0
@@ -1116,8 +1250,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd1bfe0f934c19643a0db4702d08bb81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DistractTarget
-  clangSound: {fileID: 0}
-  interactTooltipUI: {fileID: 0}
+  clangSound: {fileID: 8300000, guid: 6135c21c6698cbd4b9efeba76c54a38a, type: 3}
+  interactTooltipUI: {fileID: 1253320311}
   tooltipText: Press [Space] to throw pebbles
 --- !u!212 &601624195
 SpriteRenderer:
@@ -1536,8 +1670,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd1bfe0f934c19643a0db4702d08bb81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DistractTarget
-  clangSound: {fileID: 0}
-  interactTooltipUI: {fileID: 0}
+  clangSound: {fileID: 8300000, guid: 6135c21c6698cbd4b9efeba76c54a38a, type: 3}
+  interactTooltipUI: {fileID: 1253320311}
   tooltipText: Press [Space] to throw pebbles
 --- !u!212 &688339656
 SpriteRenderer:
@@ -1839,7 +1973,7 @@ Transform:
   m_GameObject: {fileID: 709553247}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.60843, y: 5.8, z: -10}
+  m_LocalPosition: {x: -12.810917, y: 5.8, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2013,8 +2147,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd1bfe0f934c19643a0db4702d08bb81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DistractTarget
-  clangSound: {fileID: 0}
-  interactTooltipUI: {fileID: 0}
+  clangSound: {fileID: 8300000, guid: 6135c21c6698cbd4b9efeba76c54a38a, type: 3}
+  interactTooltipUI: {fileID: 1253320311}
   tooltipText: Press [Space] to throw pebbles
 --- !u!212 &732325544
 SpriteRenderer:
@@ -2310,11 +2444,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1455051588540652202, guid: 196484aea5c202a479541a71c0c80898, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -349.99997
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 1455051588540652202, guid: 196484aea5c202a479541a71c0c80898, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 477
+      value: 258
       objectReference: {fileID: 0}
     - target: {fileID: 2652835295779431387, guid: 196484aea5c202a479541a71c0c80898, type: 3}
       propertyPath: m_IsActive
@@ -2328,6 +2462,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 709553249}
+    - target: {fileID: 5111270877169799019, guid: 196484aea5c202a479541a71c0c80898, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7503391709837588163, guid: 196484aea5c202a479541a71c0c80898, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -2408,10 +2546,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7987910448099497596, guid: 196484aea5c202a479541a71c0c80898, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7987910448099497596, guid: 196484aea5c202a479541a71c0c80898, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 588806043}
   m_SourcePrefab: {fileID: 100100000, guid: 196484aea5c202a479541a71c0c80898, type: 3}
 --- !u!1 &918147163
 GameObject:
@@ -2889,8 +3034,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd1bfe0f934c19643a0db4702d08bb81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DistractTarget
-  clangSound: {fileID: 0}
-  interactTooltipUI: {fileID: 0}
+  clangSound: {fileID: 8300000, guid: 6135c21c6698cbd4b9efeba76c54a38a, type: 3}
+  interactTooltipUI: {fileID: 1253320311}
   tooltipText: Press [Space] to throw pebbles
 --- !u!212 &1216314757
 SpriteRenderer:
@@ -3233,6 +3378,145 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6382698365871059935, guid: 28746acd1d8df114cb959ed429003125, type: 3}
   m_PrefabInstance: {fileID: 129908290}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1500585063 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3319895484508020407, guid: 28746acd1d8df114cb959ed429003125, type: 3}
+  m_PrefabInstance: {fileID: 129908290}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae87e5925b39ada4685c9ce058482f67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Tam
+--- !u!1001 &1569487034
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8174419980255346249, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1500585063}
+    - target: {fileID: 8174419980255346249, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnInteractButton_Pressed
+      objectReference: {fileID: 0}
+    - target: {fileID: 8174419980255346249, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: HE181245_DaoHuyHoang_UntoldTalesFairyTales.Tam, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8205764518265057448, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -110.16016
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264230188160813368, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264230188160813368, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264230188160813368, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264230188160813368, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264230188160813368, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264230188160813368, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264230188160813368, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264230188160813368, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264230188160813368, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264230188160813368, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264230188160813368, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264230188160813368, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264230188160813368, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264230188160813368, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264230188160813368, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264230188160813368, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264230188160813368, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264230188160813368, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264230188160813368, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264230188160813368, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8394751893858029876, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_Name
+      value: CanvasMobile
+      objectReference: {fileID: 0}
+    - target: {fileID: 8513472202514643357, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 709553249}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+--- !u!114 &1569487035 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5035482370641041745, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+  m_PrefabInstance: {fileID: 1569487034}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45977bbae16431c46a013576a1aea384, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1647943477 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1313580700982053857, guid: 234e7aa07ed096147a980eff1ab27d58, type: 3}
@@ -4056,3 +4340,5 @@ SceneRoots:
   - {fileID: 1954264293}
   - {fileID: 1255483653}
   - {fileID: 684730798}
+  - {fileID: 300368566}
+  - {fileID: 1569487034}

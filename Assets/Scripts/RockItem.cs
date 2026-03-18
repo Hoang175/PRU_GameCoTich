@@ -1,69 +1,92 @@
 ﻿using UnityEngine;
 using TMPro;
 
-[RequireComponent(typeof(Collider2D))]
-public class RockItem : MonoBehaviour
+namespace HE181245_DaoHuyHoang_UntoldTalesFairyTales
 {
-    public AudioClip pickupSound;
-    public GameObject interactTooltipUI;
-    public string tooltipText = "Nhấn [Space] để nhặt sỏi";
-
-    private AudioSource audioSource;
-    private bool isPlayerNear = false;
-
-    // Biến toàn cục báo cho hệ thống biết Tấm đã có sỏi
-    public static bool hasRock = false;
-
-    void Start()
+    [RequireComponent(typeof(Collider2D))]
+    public class RockItem : MonoBehaviour
     {
-        GetComponent<Collider2D>().isTrigger = true;
-        audioSource = GetComponent<AudioSource>();
-        if (audioSource == null) audioSource = gameObject.AddComponent<AudioSource>();
+        public AudioClip pickupSound;
+        public GameObject interactTooltipUI;
+        public string tooltipText = "Press [Space] to pick up pebbles";
 
-        hasRock = false; // Reset mỗi lần vào màn
-    }
+        private AudioSource audioSource;
+        private bool isPlayerNear = false;
+        private float interactCooldown = 0f;
 
-    void Update()
-    {
-        if (isPlayerNear && Input.GetKeyDown(KeyCode.Space))
+        public static bool hasRock = false;
+
+        void Start()
         {
-            hasRock = true;
-            //if (pickupSound != null) audioSource.PlayOneShot(pickupSound);
-
-            if (pickupSound != null)
-            {
-                // ==== DÙNG LỆNH NÀY THAY THẾ ====
-                AudioSource.PlayClipAtPoint(pickupSound, transform.position);
-            }
-
-            if (interactTooltipUI != null) interactTooltipUI.SetActive(false);
-
-            //string[] lines = { "Tấm: Một nắm sỏi... Có thể dùng nó để gây tiếng động đánh lạc hướng Dì!" };
-            string[] lines = { "Tam: A handful of pebbles... I can use these to make a noise and distract her!" };
-            if (DialogueManager.instance != null) DialogueManager.instance.StartDialogue(lines);
-
-            gameObject.SetActive(false); // Ẩn viên sỏi đi
+            GetComponent<Collider2D>().isTrigger = true;
+            audioSource = GetComponent<AudioSource>();
+            if (audioSource == null) audioSource = gameObject.AddComponent<AudioSource>();
+            hasRock = false;
         }
-    }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
+        void Update()
         {
-            isPlayerNear = true;
-            if (interactTooltipUI != null)
+            if (interactCooldown > 0) interactCooldown -= Time.deltaTime;
+
+            if (isPlayerNear)
             {
-                interactTooltipUI.GetComponentInChildren<TextMeshProUGUI>().text = tooltipText;
-                interactTooltipUI.SetActive(true);
+                if (DialogueManager.instance != null && DialogueManager.instance.isTalking)
+                {
+                    if (interactTooltipUI != null) interactTooltipUI.SetActive(false);
+                    interactCooldown = 0.2f;
+                }
+                else
+                {
+                    if (interactTooltipUI != null) interactTooltipUI.SetActive(true);
+
+                    // Bấm bằng PC
+                    if (interactCooldown <= 0f && Input.GetKeyDown(KeyCode.Space))
+                    {
+                        TriggerInteract();
+                    }
+                }
             }
         }
-    }
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
+
+        // DÙNG CHO NÚT BÀN TAY BẤM VÀO
+        public void TriggerInteract()
         {
-            isPlayerNear = false;
-            if (interactTooltipUI != null) interactTooltipUI.SetActive(false);
+            if (isPlayerNear && interactCooldown <= 0f)
+            {
+                hasRock = true;
+                if (pickupSound != null)
+                {
+                    AudioSource.PlayClipAtPoint(pickupSound, transform.position);
+                }
+
+                if (interactTooltipUI != null) interactTooltipUI.SetActive(false);
+
+                string[] lines = { "Tam: A handful of pebbles... I can use these to make a noise and distract her!" };
+                if (DialogueManager.instance != null) DialogueManager.instance.StartDialogue(lines);
+
+                gameObject.SetActive(false);
+            }
+        }
+
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            if (collision.CompareTag("Player"))
+            {
+                isPlayerNear = true;
+                if (interactTooltipUI != null)
+                {
+                    interactTooltipUI.GetComponentInChildren<TextMeshProUGUI>().text = tooltipText;
+                    interactTooltipUI.SetActive(true);
+                }
+            }
+        }
+        private void OnTriggerExit2D(Collider2D collision)
+        {
+            if (collision.CompareTag("Player"))
+            {
+                isPlayerNear = false;
+                if (interactTooltipUI != null) interactTooltipUI.SetActive(false);
+            }
         }
     }
 }
