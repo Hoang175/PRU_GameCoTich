@@ -223,6 +223,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3657423894309475784, guid: f494951d16a34504f8b02f03f122f4d1, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3657423894309475784, guid: f494951d16a34504f8b02f03f122f4d1, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 2400
+      objectReference: {fileID: 0}
     - target: {fileID: 5716307188556267290, guid: f494951d16a34504f8b02f03f122f4d1, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -382,9 +390,9 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 2400, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -898,7 +906,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 629, y: -50}
+  m_AnchoredPosition: {x: 1862, y: -70}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &772570900
@@ -1435,8 +1443,8 @@ Transform:
   m_GameObject: {fileID: 909605159}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -23.23959, y: 2.22917, z: 0}
-  m_LocalScale: {x: 1.5531671, y: 2.4162781, z: 1}
+  m_LocalPosition: {x: -24.5152, y: 2.0215, z: 0}
+  m_LocalScale: {x: 1.7423428, y: 2.3459644, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1721192157}
@@ -1528,7 +1536,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1455051588540652202, guid: 196484aea5c202a479541a71c0c80898, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -397.00006
+      value: -397
       objectReference: {fileID: 0}
     - target: {fileID: 4603622537873321817, guid: 196484aea5c202a479541a71c0c80898, type: 3}
       propertyPath: m_Name
@@ -1538,6 +1546,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1440585128}
+    - target: {fileID: 6627959540539397959, guid: 196484aea5c202a479541a71c0c80898, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 2400
+      objectReference: {fileID: 0}
     - target: {fileID: 7503391709837588163, guid: 196484aea5c202a479541a71c0c80898, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -2319,10 +2331,10 @@ RectTransform:
   - {fileID: 772570899}
   m_Father: {fileID: 170529012}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -340, y: 178.19}
-  m_SizeDelta: {x: 106.53, y: 85.62}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 53.264893, y: -42.809937}
+  m_SizeDelta: {x: 106.53003, y: 85.619995}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1645096948
 PrefabInstance:

@@ -603,6 +603,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7548308726809334518, guid: c6eea46603e674541b2f0e0a37fffb8c, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 2400
+      objectReference: {fileID: 0}
     - target: {fileID: 7943649462463732708, guid: c6eea46603e674541b2f0e0a37fffb8c, type: 3}
       propertyPath: m_Name
       value: GameHUD
@@ -1518,6 +1522,14 @@ PrefabInstance:
     - target: {fileID: 18311848592611863, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
       propertyPath: m_RaycastTarget
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6179484524384983206, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6179484524384983206, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 2400
       objectReference: {fileID: 0}
     - target: {fileID: 8174419980255346249, guid: fa9532b1fab3ff440a8761d9cdfeea11, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
